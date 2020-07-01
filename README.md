@@ -1,3 +1,11 @@
+## Step for stepup React app
+$ npm init react-app hotel
+$ cd hotel
+$ npm run eject
+$ npm install --save axios react-router react-router-dom
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
