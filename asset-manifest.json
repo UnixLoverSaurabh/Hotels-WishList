@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Hotels-WishList/static/css/main.e615e4f2.chunk.css",
+    "main.js": "/Hotels-WishList/static/js/main.ded0173b.chunk.js",
+    "main.js.map": "/Hotels-WishList/static/js/main.ded0173b.chunk.js.map",
+    "runtime-main.js": "/Hotels-WishList/static/js/runtime-main.b3f1a4a3.js",
+    "runtime-main.js.map": "/Hotels-WishList/static/js/runtime-main.b3f1a4a3.js.map",
+    "static/js/2.c41073b0.chunk.js": "/Hotels-WishList/static/js/2.c41073b0.chunk.js",
+    "static/js/2.c41073b0.chunk.js.map": "/Hotels-WishList/static/js/2.c41073b0.chunk.js.map",
+    "index.html": "/Hotels-WishList/index.html",
+    "precache-manifest.417eec51c182e271910307174f013b22.js": "/Hotels-WishList/precache-manifest.417eec51c182e271910307174f013b22.js",
+    "service-worker.js": "/Hotels-WishList/service-worker.js",
+    "static/css/main.e615e4f2.chunk.css.map": "/Hotels-WishList/static/css/main.e615e4f2.chunk.css.map",
+    "static/js/2.c41073b0.chunk.js.LICENSE.txt": "/Hotels-WishList/static/js/2.c41073b0.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b3f1a4a3.js",
+    "static/js/2.c41073b0.chunk.js",
+    "static/css/main.e615e4f2.chunk.css",
+    "static/js/main.ded0173b.chunk.js"
+  ]
+}
