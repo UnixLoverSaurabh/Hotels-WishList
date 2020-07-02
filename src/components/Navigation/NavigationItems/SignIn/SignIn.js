@@ -35,7 +35,7 @@ class SignIn extends Component {
                 });
 
                 if(this.state.logined) {
-                        alert('Success');
+                        this.props.history.push('/hotels');
                 }
                 else if (! this.state.logined) {
                         alert('Wrong username or password');
