@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import Aux from '../../hoc/Auxi/Auxi';
+import axios from '../../axios';
 import classes from 'bootstrap/dist/css/bootstrap.min.css';
 import classNames from 'classnames';
 import Typed from 'react-typed';
 import AOS from 'aos';
+// import 'aos/dist/aos.css';
 
 class Orders extends Component {
 
@@ -11,20 +13,27 @@ class Orders extends Component {
                 lookingFor: '',
                 location: '',
                 categorie: '',
+                inDate: '',
+                outDate: '',
                 loading: false
-        } 
+        }
 
         componentDidMount() {
                 AOS.init();
         }
 
-        componentWillReceiveProps() {
-                AOS.refresh();
-        }
-
         formHandler = () => {
                 console.log(this.state.lookingFor + '  ' + this.state.location + ' ' + this.state.categorie);
-                alert(this.state.lookingFor + '  ' + this.state.location + ' ' + this.state.categorie);
+                const data = {
+                        location: this.state.location,
+                        inDate: this.state.inDate,
+                        outDate: this.state.outDate
+                };
+
+                axios.post('/info.json', data)
+                .then(resopnse => {
+                        alert(this.state.lookingFor + '  ' + this.state.location + ' ' + this.state.categorie + ' uploaded succesfully');
+                })
         }
 
         render() {
@@ -40,14 +49,14 @@ class Orders extends Component {
 
                                                                 <div className={classNames(classes.row, classes['justify-content-center'])}>
                                                                         <div className={classNames(classes['col-md-8'], classes['text-center'])}>
-                                                                                <h1>Find Nearby <span><Typed
+                                                                                <h1 data-aos='fade-up'>Find Nearby <span><Typed
                                                                                         strings={[
                                                                                                 'Appartments',
                                                                                                 'Restaurants',
                                                                                                 'Hotels',
                                                                                                 'Events']} typeSpeed={80} backSpeed={80} backDelay={4000} startDelay={1000}
                                                                                         showCursor loop ></Typed></span></h1>
-                                                                                <p>Explore top-rated attractions, activities and more!</p>
+                                                                                <p data-aos="fade-up" data-aos-delay="100">Explore top-rated attractions, activities and more!</p>
                                                                         </div>
                                                                 </div>
 
