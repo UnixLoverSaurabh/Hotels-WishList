@@ -1,25 +1,25 @@
 import React, { Component } from 'react';
-import Order from '../../components/Navigation/NavigationItems/Order/Order';
+import Hotel from './Hotel/Hotel';
 import axios from '../../axios';
-import withErrorHandler from '../../hoc/withErrorHandler/withErrorHandler';
 
-class AllOrders extends Component {
+class Hotels extends Component {
+
         state = {
-                orders: [],
+                hotels: [],
                 loading: true
         }
-
         componentDidMount() {
-                axios.get('/orders.json').then(response => {
-                        let fetchedOrders = [];
+                axios.get('/hotel.json').then(response => {
+                        let fetchedHotels = [];
                         for (let key in response.data) {
-                                fetchedOrders.push({
+                                console.log(response.data[key]['index'] + ' ' + response.data[key]['location'] + ' ' + response.data[key]['hotel_name']);
+                                fetchedHotels.push({
                                         ...response.data[key],
                                         id: key
                                 });
                         }
                         this.setState({
-                                orders: fetchedOrders,
+                                hotels: fetchedHotels,
                                 loading: false
                         });
                 }).catch(error => {
@@ -32,13 +32,12 @@ class AllOrders extends Component {
         render() {
                 return (
                         <div>
-                             {this.state.orders.map(order => (
-                                     <Order key={order.id} materials={order.materials} price={order.price} />
+                             {this.state.hotels.map(hotel => (
+                                     <Hotel key={hotel.index} location={hotel.location} price={hotel.room_price} hotel_name={hotel.hotel_name} />
                              ))}   
                         </div>
                 );
         };
-        ;
-}
+};
 
-export default withErrorHandler(AllOrders, axios);
+export default Hotels;

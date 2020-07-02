@@ -5,7 +5,7 @@ import Authentication from './containers/Authentication/Authentication';
 import Orders from './containers/Orders/Orders';
 import Hotels from './containers/Hotels/Hotels';
 import { Switch, Route } from 'react-router-dom';
-import AllOrders from './containers/AllOrders/AllOrders';
+import Wishlist from './containers/Wishlist/Wishlist';
 
 class App extends Component {
   render() {
@@ -15,7 +15,7 @@ class App extends Component {
           <Switch>
             <Route path="/hotels" component={Hotels} />
             <Route path="/auth" component={Authentication} />
-            <Route path="/orders" component={AllOrders} />
+            <Route path="/wishlist" component={Wishlist} />
             <Route path="/" component={Orders} />
           </Switch>
         </Layout>
