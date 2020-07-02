@@ -9,7 +9,7 @@ class Authentication extends Component {
         render() {
                 return(
                         <Aux>
-                                <h1 className={classes.Home}>Ok Trolly</h1>
+                                <h1 className={classes.Home}>Hotels WishList</h1>
                                 <Route path="/auth/signin" exact component={SignIn} />
                                 <Route path="/auth/signup" exact component={SignUp} />
                         </Aux>

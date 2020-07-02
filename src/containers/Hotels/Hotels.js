@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Hotel from './Hotel/Hotel';
 import axios from '../../axios';
+import classes from './Hotels.css';
 
 class Hotels extends Component {
 
@@ -31,7 +32,7 @@ class Hotels extends Component {
 
         render() {
                 return (
-                        <div>
+                        <div className={classes.Hotels}>
                              {this.state.hotels.map(hotel => (
                                      <Hotel key={hotel.index} location={hotel.location} price={hotel.room_price} hotel_name={hotel.hotel_name} />
                              ))}   
