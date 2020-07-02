@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/Hotels-WishList/static/css/main.b6cf5fa8.chunk.css",
-    "main.js": "/Hotels-WishList/static/js/main.26d5259c.chunk.js",
-    "main.js.map": "/Hotels-WishList/static/js/main.26d5259c.chunk.js.map",
+    "main.css": "/Hotels-WishList/static/css/main.6ee67528.chunk.css",
+    "main.js": "/Hotels-WishList/static/js/main.c434d90d.chunk.js",
+    "main.js.map": "/Hotels-WishList/static/js/main.c434d90d.chunk.js.map",
     "runtime-main.js": "/Hotels-WishList/static/js/runtime-main.b3f1a4a3.js",
     "runtime-main.js.map": "/Hotels-WishList/static/js/runtime-main.b3f1a4a3.js.map",
     "static/css/2.b832262c.chunk.css": "/Hotels-WishList/static/css/2.b832262c.chunk.css",
-    "static/js/2.30988885.chunk.js": "/Hotels-WishList/static/js/2.30988885.chunk.js",
-    "static/js/2.30988885.chunk.js.map": "/Hotels-WishList/static/js/2.30988885.chunk.js.map",
+    "static/js/2.e074f914.chunk.js": "/Hotels-WishList/static/js/2.e074f914.chunk.js",
+    "static/js/2.e074f914.chunk.js.map": "/Hotels-WishList/static/js/2.e074f914.chunk.js.map",
     "index.html": "/Hotels-WishList/index.html",
-    "precache-manifest.4962bd336939b8a2426e2ac787bf7cde.js": "/Hotels-WishList/precache-manifest.4962bd336939b8a2426e2ac787bf7cde.js",
+    "precache-manifest.27946d9e24303fd1ca4e14c4c271ced5.js": "/Hotels-WishList/precache-manifest.27946d9e24303fd1ca4e14c4c271ced5.js",
     "service-worker.js": "/Hotels-WishList/service-worker.js",
     "static/css/2.b832262c.chunk.css.map": "/Hotels-WishList/static/css/2.b832262c.chunk.css.map",
-    "static/css/main.b6cf5fa8.chunk.css.map": "/Hotels-WishList/static/css/main.b6cf5fa8.chunk.css.map",
-    "static/js/2.30988885.chunk.js.LICENSE.txt": "/Hotels-WishList/static/js/2.30988885.chunk.js.LICENSE.txt",
+    "static/css/main.6ee67528.chunk.css.map": "/Hotels-WishList/static/css/main.6ee67528.chunk.css.map",
+    "static/js/2.e074f914.chunk.js.LICENSE.txt": "/Hotels-WishList/static/js/2.e074f914.chunk.js.LICENSE.txt",
     "static/media/index.css": "/Hotels-WishList/static/media/hero_1.8230132b.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.b3f1a4a3.js",
     "static/css/2.b832262c.chunk.css",
-    "static/js/2.30988885.chunk.js",
-    "static/css/main.b6cf5fa8.chunk.css",
-    "static/js/main.26d5259c.chunk.js"
+    "static/js/2.e074f914.chunk.js",
+    "static/css/main.6ee67528.chunk.css",
+    "static/js/main.c434d90d.chunk.js"
   ]
 }
