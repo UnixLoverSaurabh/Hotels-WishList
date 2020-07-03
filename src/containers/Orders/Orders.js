@@ -21,11 +21,13 @@ class Orders extends Component {
         }
 
         formHandler = () => {
+                const date = new Date();
                 console.log(this.state.location + ' ' + this.state.categorie);
                 const data = {
                         location: this.state.location,
                         inDate: this.state.inDate,
-                        outDate: this.state.outDate
+                        outDate: this.state.outDate,
+                        primaryKey: date
                 };
 
                 axios.post('/info.json', data)
