@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "35660df54cc5ed35c5b75244661ba86a",
+    "revision": "3fe98746ac55fa4a1083a8964dd8d59a",
     "url": "/Hotels-WishList/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Hotels-WishList/static/css/2.b832262c.chunk.css"
   },
   {
-    "revision": "969a1e4150652495ba6c",
+    "revision": "3765b1885a5a62feb629",
     "url": "/Hotels-WishList/static/css/main.094b85fb.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Hotels-WishList/static/js/2.cdaee7b4.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "969a1e4150652495ba6c",
-    "url": "/Hotels-WishList/static/js/main.d01ca30d.chunk.js"
+    "revision": "3765b1885a5a62feb629",
+    "url": "/Hotels-WishList/static/js/main.938dcdb8.chunk.js"
   },
   {
     "revision": "421fed6bc6145103ad6b",
