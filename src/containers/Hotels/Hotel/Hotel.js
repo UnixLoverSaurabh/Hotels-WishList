@@ -8,7 +8,7 @@ const NavigationItem = (props) => {
         <div className={classes.Hotel}>
             <div className={classes['listing-horizontal']}>
                 <div className={classes['lh-content']}>
-                    <Link className={classes.bookmark}><span>Add</span></Link>
+                    <Link to="#" className={classes.bookmark}><span onClick={props.clicked}>Add</span></Link>
                     <p>Hotel: <strong>{props.hotel_name}</strong></p>
                     <p>Price: <strong>{props.price}</strong></p>
                     <p>Location: <strong>{props.location}</strong></p>

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import classes from './SignIn.css';
 import { Link } from 'react-router-dom';
 import axios from '../../../../axios';
+import { connect } from 'react-redux';
 
 class SignIn extends Component {
 
@@ -16,7 +17,7 @@ class SignIn extends Component {
         Submit = (props) => {
                 axios.get('/users.json').then(response => {
                         for (let key in response.data) {
-                                if(response.data[key]['username'] === this.state.username && (response.data[key]['password'] === this.state.password) ){
+                                if (response.data[key]['username'] === this.state.username && (response.data[key]['password'] === this.state.password)) {
                                         this.setState({
                                                 logined: true
                                         });
@@ -34,11 +35,8 @@ class SignIn extends Component {
                         });
                 });
 
-                if(this.state.logined) {
+                if (this.state.logined) {
                         this.props.history.push('/');
-                }
-                else if (! this.state.logined) {
-                        alert('Wrong username or password');
                 }
         };
 
@@ -59,4 +57,19 @@ class SignIn extends Component {
         }
 };
 
-export default SignIn;
+const mapStateToProps = state => {
+        return {
+                username: state
+        };
+};
+
+const mapDispathToProps = dispatch => {
+        return {
+                setUsername: () => dispatch({
+                        type: 'INCREMENT',
+                        val: 'Saurabh'
+                })
+        };
+};
+
+export default connect(mapStateToProps, mapDispathToProps)(SignIn);

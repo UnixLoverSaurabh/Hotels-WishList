@@ -30,12 +30,24 @@ class Hotels extends Component {
                 });
         };
 
+        postSelectedHandler = (hotel) => {
+
+                axios.post('/wishlist.json', hotel)
+                        .then(response => {
+                                console.log(hotel);
+                        })
+                        .catch(error => {
+                                alert('Wait while we are uploading');
+                        });
+        }
+
+
         render() {
                 return (
                         <div className={classes.Hotels}>
-                             {this.state.hotels.map(hotel => (
-                                     <Hotel key={hotel.index} location={hotel.location} price={hotel.room_price} hotel_name={hotel.hotel_name} />
-                             ))}   
+                                {this.state.hotels.map(hotel => (
+                                        <Hotel key={hotel.index} clicked={() => this.postSelectedHandler(hotel)} location={hotel.location} price={hotel.room_price} hotel_name={hotel.hotel_name} />
+                                ))}
                         </div>
                 );
         };
